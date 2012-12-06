@@ -498,11 +498,24 @@ vendor/
                         <pre><code>$ rm -rf vendor/
 $ php composer.phar update -v</code></pre>
                     </div>
+                </section>
+
+                <section>
+                    <h2>Wrap-up</h1>
 
                     <div class="fragment">
-                        Still not working?
-                        <br/>
-                        Report a bug with full --verbose output
+                        Install dependencies once
+                        <pre><code>$ php composer.phar install</code></pre>
+                    </div>
+
+                    <div class="fragment">
+                        Update dependencies when you need
+                        <pre><code>$ php composer.phar update</code></pre>
+                    </div>
+
+                    <div class="fragment">
+                        Optimizing autoloader performace
+                        <pre><code>$ php composer.phar dump-autoload --optimize</code></pre>
                     </div>
                 </section>
 
