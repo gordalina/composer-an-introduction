@@ -184,13 +184,18 @@
                     <div class="fragment">
                         <p>Range</p>
                         <pre><code>"monolog/monolog": ">=1.2.0"     // 1.2.4 - latest version
-"monolog/monolog": ">=1.2,&lt;1.3"  // 1.2.4 - AND operator
-"monolog/monolog": "1.2.*"       // 1.2.4 - same as ">=1.2,&lt;1.3"</code></pre>
+"monolog/monolog": "&gt;=1.2,&lt;1.3"  // 1.2.4 - AND operator
+"monolog/monolog": "1.2.*"       // 1.2.4 - same as "&gt;=1.2,&lt;1.3"</code></pre>
                     </div>
 
                     <div class="fragment">
                         <p>Wildcard</p>
-                        <pre><code>"monolog/monolog": "1.2.*"       // 1.2.4 - same as ">=1.2,&lt;1.3"</code></pre>
+                        <pre><code>"monolog/monolog": "1.2.*"       // 1.2.4 - same as "&gt;=1.2,&lt;1.3"</code></pre>
+                    </div>
+
+                    <div class="fragment">
+                        <p>Next Significant Release</p>
+                        <pre><code>"monolog/monolog": "~1.2.1"      // same as "&gt;=1.2.1,&lt;2.0"</code></pre>
                     </div>
 
                     <div class="fragment">
