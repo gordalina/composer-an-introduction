@@ -1,0 +1,8 @@
+{
+    "name": "phplx/phplx.net",
+    "description": "phplx.net website",
+    "license": "MIT",
+    "require": {
+        "monolog/monolog": "1.1.*"
+    }
+}
