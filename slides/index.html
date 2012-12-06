@@ -339,6 +339,8 @@ $world->addNotice('Hello!');
                         <br/>
                         PSR-0 is a standard in FIG that defines how a project must expose it's classes (both in naming and file system structure) so that they can be consumed by the end-user.
                         <br/>
+                        Composer supports classmaps (will be talked later on)
+                        <br/>
                         Does composer play ball with teams?
                     </aside>
                 </section>
@@ -457,38 +459,19 @@ vendor/
 
                 <section>
                     <h2>Updating composer.lock</h1>
-                    <pre class="fragment"><code>php composer.phar update nothing</code></pre>
+                    <pre class="fragment"><code>$ php composer.phar update nothing</code></pre>
                 </section>
 
                 <section>
                     <h2>Updating composer</h1>
-                    <pre class="fragment"><code>php composer.phar self-update</code></pre>
-                    <p class="fragment">composer alpha builds expire in 30 days</p>
+                    <pre class="fragment"><code>$ php composer.phar self-update</code></pre>
+                    <p class="fragment">composer dev builds expire in 30 days</p>
                 </section>
 
                 <section>
                     <h2>Optimizing autoloader performace</h1>
-                    <pre class="fragment"><code>php composer.phar dump-autoload --optimize</code></pre>
-                    <p class="fragment">Creates a classmap to avoid filesystem lookups</p>
-                </section>
-
-                <section>
-                    <h2>Wrap-up</h1>
-
-                    <div class="fragment">
-                        Install dependencies once
-                        <pre><code>php composer.phar install</code></pre>
-                    </div>
-
-                    <div class="fragment">
-                        Update dependencies when you need
-                        <pre><code>php composer.phar update</code></pre>
-                    </div>
-
-                    <div class="fragment">
-                        Self-Update composer
-                        <pre><code>php composer.phar self-update</code></pre>
-                    </div>
+                    <pre class="fragment"><code>$ php composer.phar dump-autoload --optimize</code></pre>
+                    <p class="fragment">Creates a classmap for all classes</p>
                 </section>
 
                 <section>
